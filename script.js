@@ -1,6 +1,6 @@
 const parseCode = (str) => {
-  // your code here
-	    let parts = str.split('0');
+    // Split the encoded string by '0' and remove empty elements
+    let parts = str.split('0').filter(part => part !== '');
 
     // Extract first name, last name, and id
     let firstName = parts[0];
@@ -13,7 +13,6 @@ const parseCode = (str) => {
         lastName: lastName,
         id: id
     };
-	
 };
 
 // Do not change the code below
